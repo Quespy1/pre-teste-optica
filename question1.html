@@ -1,0 +1,12 @@
+
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>Pergunta {{ q }}</h2>
+    <p>{{ question }}</p>
+    <form method="POST">
+        <textarea name="answer" rows="5" required></textarea><br>
+        <button type="submit">Próxima</button>
+    </form>
+</div>
+{% endblock %}
